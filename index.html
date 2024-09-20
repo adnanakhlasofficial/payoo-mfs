@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo - MFS</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body class="grid place-items-center min-h-screen">
+  <body class="grid place-items-center min-h-screen">
     <!-- Phone Mockup -->
     <div class="mockup-phone">
-        <div class="camera"></div>
-        <div class="display">
-            <div class="artboard artboard-demo phone-3">
-                <!-- Login From -->
-                <section class="card bg-base-100 grid place-items-center h-full w-full shrink-0 shadow-2xl">
-                    <form class="card-body">
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Phone</span>
-                            </label>
-                            <input id="phone" type="text" placeholder="Enter Phone Number" class="input input-bordered" required />
-                        </div>
-                        <div class="form-control">
-                            <label class="label">
-                                <span class="label-text">Pin</span>
-                            </label>
-                            <input id="pin" type="password" placeholder="Enter Pin" class="input input-bordered" required />
-                            <label class="label">
-                                <a href="#" class="label-text-alt link link-hover">Forgot pin?</a>
-                            </label>
-                        </div>
-                        <div class="form-control mt-6">
-                            <button id="login-btn" class="btn btn-primary">Login</button>
-                        </div>
-                    </form>
-                </section>
-            </div>
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-3">
+          <!-- Login From -->
+          <section
+            class="card bg-base-100 grid place-items-center h-full w-full shrink-0 shadow-2xl"
+          >
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Phone</span>
+                </label>
+                <input
+                  id="phone"
+                  type="text"
+                  placeholder="345635"
+                  class="input input-bordered"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input
+                  id="2362"
+                  type="password"
+                  placeholder="Enter Pin"
+                  class="input input-bordered"
+                  required
+                />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover"
+                    >Forgot pin?</a
+                  >
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button id="login-btn" class="btn btn-primary">Login</button>
+              </div>
+            </form>
+          </section>
         </div>
+      </div>
     </div>
     <script src="./scripts/utilities.js"></script>
     <script src="./scripts/login.js"></script>
-</body>
-
+  </body>
 </html>
+
