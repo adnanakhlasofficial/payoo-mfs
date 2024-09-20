@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Payoo - MFS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="grid place-items-center min-h-screen">
+    <!-- Phone Mockup -->
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+            <div class="artboard artboard-demo phone-3">
+                <!-- stat -->
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div id="balance" class="stat-value">4400</div>
+                        <div class="stat-desc">Account Balance</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- Buttons -->
+                <div class="flex gap-6">
+                    <button id="cash-in-btn" class="btn btn-info">Cash In</button>
+                    <button id="cash-out-btn" class="btn btn-error">Cash Out</button>
+                    <button id="transaction-btn" class="btn btn-success">Transaction</button>
+                </div>
+                
+                <div class="divider"></div>
+
+                <!-- Form -->
+                <div id="form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="amount" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="pin" type="password" placeholder="Enter Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cash-in" class="btn btn-primary">Cash In</button>
+                        <button id="cash-out" class="hidden btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <section id="transaction" class="hidden mt-8">
+                    <h2 class="text-4xl font-semibold">Transaction History</h2>
+                  </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/utilities.js"></script>
+    <script src="./scripts/cash-in-out.js"></script>
+</body>
+
+</html>
