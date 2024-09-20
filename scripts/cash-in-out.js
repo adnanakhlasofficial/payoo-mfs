@@ -1,8 +1,5 @@
 let money = 400;
-const moneyCurrency = Number(money).toLocaleString('en-US', {
-    style: 'currency',
-    currency: 'USD',
-});
+const moneyCurrency = Number(money).toLocaleString('bn-BD', {style: 'currency', currency: 'BDT', minimumFractionDigits: 0, maximumFractionDigits: 0});
 document.getElementById('balance').innerText = moneyCurrency;
 
 
@@ -16,10 +13,7 @@ document.getElementById("cash-in").addEventListener("click", (event) => {
         const amount = getInputNumById("amount")
         money += amount;
         
-        document.getElementById("balance").innerText = money.toLocaleString('en-US', {
-            style: 'currency',
-            currency: 'USD',
-        });
+        document.getElementById("balance").innerText = money.toLocaleString('bn-BD', {style: 'currency', currency: 'BDT', minimumFractionDigits: 0, maximumFractionDigits: 0});
 
         const cashOut = document.createElement("p");
         cashOut.innerHTML = `<p class="text-base text-blue-500">Cash In amount ${amount} Balance is ${money}`
@@ -45,10 +39,7 @@ document.getElementById("cash-out").addEventListener("click", (event) => {
         if (amount < money) {
             money -= amount;
 
-            document.getElementById("balance").innerText = money.toLocaleString('en-US', {
-                style: 'currency',
-                currency: 'USD',
-            });
+            document.getElementById("balance").innerText = money.toLocaleString('bn-BD', {style: 'currency',currency: 'BDT', minimumFractionDigits: 0, maximumFractionDigits: 0});
 
             const cashOut = document.createElement("p");
             cashOut.innerHTML = `<p class="text-base text-red-500">Cash Out amount ${amount} Balance is ${money}`
